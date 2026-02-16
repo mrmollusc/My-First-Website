@@ -3,12 +3,13 @@ const colors = ['red', 'orange', 'yellow', 'lime', 'aqua', 'BlueViolet', 'fuchsi
 let index = 0;
 
 function changeColor() {
-    rainbowButton.background.color = colors[index];
+    rainbowButton.style.color = colors[index];
     index ++; 
 
 }
 rainbowButton.addEventListener("click", function () {
-  rainbowButton.background.color = colors[index%7];
+  rainbowButton.style.color = colors[index%7];
   changeColor();
 
 });
+
